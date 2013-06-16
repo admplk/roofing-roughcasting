@@ -20,31 +20,45 @@
         <script type="text/javascript" src="/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div class="container">
-            <div class="navbar navbar-inverse">            
-                <div class="navbar-inner">
-                    <div style="font-size:150%; color:whitesmoke; font-style:italic; padding: 10px;">
-                        <img src="/img/logo-transparent.gif" alt="Grant Allan Roofing and Roughcasting" style="height:100px;float:left;" />
-                        <div style="float:left;margin-left:40px;padding-top:15px;">
-                            <p>Grant Allan Roofing and Roughcasting</p>
-                            <p>tel: 0131 319 2153 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mob: 07841640097</p>
-                        </div>
-                    </div>                    
-                <!--<div class="container-fluid">                
-                  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>              
-                  <div class="nav-collapse collapse">
-                    <ul class="nav">
-                      <li <?php if ($pageId == 1){?> class="active" <?php } ?>><a href="/admin"><i class="icon-home icon-white"></i></a></li>
-                      <li <?php if ($pageId == 2){?> class="active" <?php } ?>><a href="/admin/manage-fixtures">Manage Fixtures</a></li>
-                      <li <?php if ($pageId == 3){?> class="active" <?php } ?>><a href="/admin/manage-teams">Manage Teams</a></li>
-                      <li <?php if ($pageId == 4){?> class="active" <?php } ?>><a href="/admin/manage-players">Manage Players</a></li>
-                      <li <?php if ($pageId == 5){?> class="active" <?php } ?>><a href="/admin/calendar">Calendar</a></li>
-                      <li <?php if ($pageId == 6){?> class="active" <?php } ?>><a href="/admin/website-releases">Version History</a></li>
-                    </ul>                
-                  </div>--><!--/.nav-collapse -->
+        <!--<div class="header-image">          
+        </div>-->
+        <div class="container">                      
+          <div class="row">
+              <div class="span4 offset1" style="padding-top: 10px;">                
+                  <img src="/img/logo-transparent2.gif" alt="Grant Allan Roofing and Roughcasting" style="height:150px;" />                  
+              </div>
+              <div class="span6 pull-right" style="padding-top: 30px; font-size: 150%; color: #900000;">
+                <div class="row">
+                  <div class="span3">
+                    <img src="/img/phone-icon.gif" alt="tel number" style="height: 50px" />
+                    0131 319 2153
+                  </div>
+                  <div class="span3">
+                    <img src="/img/mobile-icon.gif" alt="mobile number" style="height: 50px"/>
+                    07841 640 097
+                  </div>
                 </div>
-            </div>        
+              </div>
+          </div>          
+          <div class="row">              
+            <!--nav bar-->
+            <ul class="nav nav-tabs span12" style="margin-top: -30px; font-size: 150%;">
+              <li class="<?php if ($pageId == 3){?> active <?php }?> pull-right"><a href="/contact-us" style="padding-bottom: 10px;">Contact Us</a></li>
+              <li class="<?php if ($pageId == 2){?> active <?php }?> pull-right"><a href="/services" style="padding-bottom: 10px;">Services</a></li>
+              <li class="<?php if ($pageId == 1){?> active <?php }?> pull-right"><a href="/home"><i class="icon-home"></i></a></li>
+            </ul>
+
+            <!--alternate nav bar
+            <div class="navbar span6 offset6" style="padding-bottom:0; margin-bottom:0; margin-top: -30px; font-size: 150%;">
+              <div class="navbar-inner">        
+                <ul class="nav">
+                  <li class="active"><a href="/home"><i class="icon-home"></i></a></li>
+                  <li class="divider"></li>                 
+                  <li><a href="/services">Services</a></li>      
+                  <li class="divider"></li>
+                  <li><a href="/contact-us">Contact Us</a></li>            
+                </ul>
+              </div>
+            </div>-->
+
+          </div>
