@@ -1,0 +1,38 @@
+div#contactUsContent{
+	background-image:url('/img/contact-methods.gif');
+	background-color:#339966;
+	height:200px;	
+	background-repeat:no-repeat; 
+	background-position: top right;
+}
+
+div#contactUsText{
+	width: 50%; 
+	color: white; 
+	padding-left:10px;
+}
+
+div#servicesContent{	
+	background-image:url('/img/services-bg.jpg');
+	background-color:#F9D67A;
+	height:200px;	
+	background-repeat:no-repeat; 
+	background-position: top right;	
+}
+
+div#servicesText{
+	width: 40%; 
+	color: #900000; 
+	padding-left:10px;
+}
+
+div#fatraContent{
+	height:200px; 
+	background-color:#232E83; 
+	text-align: center;
+}
+
+div#fatraText{
+	color:white; 
+	font-size: 120%;
+}

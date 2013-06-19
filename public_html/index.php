@@ -1,8 +1,8 @@
 <?php
 //require_once ('includes/initialisePage.php');
-$title = "Home";
+$title = "Roofing and Roughcasting | Grant Allan";
 $pageId = 1;
-$cssFiles = array("/css/common.css");
+$cssFiles = array("/css/common.css", "/css/home.css");
 require_once('header.php');
 ?>
 
@@ -63,8 +63,8 @@ require_once('header.php');
 <div class="row">
 	<div class="span4" style="margin-top: 20px;">
 		<a href="/contact-us" class="content-link">
-			<div class="content-holder" style="height:200px;background-image:url('/img/contact-methods.gif');background-color:#339966;background-repeat:no-repeat; background-position: top right;">
-				<div style="width: 50%; color: white; padding-left:10px;">
+			<div id="contactUsContent" class="content-holder">
+				<div id="contactUsText">
 					<h2>Contact Us</h2>
 					<span style="font-size:120%;">Any questions? Looking for a free quotation?  We would love to hear from you.</span>
 				</div>
@@ -73,8 +73,8 @@ require_once('header.php');
 	</div>
 	<div class="span4" style="margin-top: 20px;">
 		<a href="/services" class="content-link">
-			<div class="content-holder" style="height:200px;background-image:url('/img/services-bg.jpg');background-color:#F9D67A;background-repeat:no-repeat; background-position: top right;">
-				<div style="width: 40%; color: #900000; padding-left:10px;">
+			<div id="servicesContent" class="content-holder">
+				<div id="servicesText">
 					<h2>Services</h2>
 					<span style="font-size:120%;">Find out about the range of services we offer.</span>
 				</div>
@@ -83,9 +83,9 @@ require_once('header.php');
 	</div>
 	<div class="span4" style="margin-top: 20px;">
 		<a href="http://www.fatra.co.uk" class="content-link">
-			<div class="content-holder" style="height:200px; background-color:#232E83; text-align: center;">
+			<div id="fatraContent" class="content-holder">
 				<img src="/img/fatra-blue.jpg" alt="fatra" />				
-				<div style="color:white; font-size: 120%;">
+				<div id="fatraText">
 					<span style="font-size:120%;">Approved Installer</span><br />
 					<span style="font-style:italic;">Enviromentally friendly single ply roofing systems.</span>
 				</div>

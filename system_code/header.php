@@ -3,7 +3,7 @@
     <head>
         <title><?php echo $title; ?></title>
         <meta charset="utf-8">
-        <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+        <meta name="description" content="A fully qualified tradesman for over 13 years, Grant Allan Roofing and Roughcasting offers a wide range of services. Free estimates and advice available." />        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.min.css" />        
@@ -18,8 +18,9 @@
         ?>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>            
         <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <?php include_once("analyticstracking.php") ?>
     </head>
-    <body>
+    <body>        
         <!--<div class="header-image">          
         </div>-->
         <div class="container">                      

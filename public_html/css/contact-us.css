@@ -5,3 +5,9 @@ div.contact-details p{
 img.tick-icon{
 	height:30px;
 }
+
+div#addressDetails{
+	margin-top: 20px; 
+	padding-left:20px;
+	text-align: center;
+}

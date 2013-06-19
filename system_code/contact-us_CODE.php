@@ -88,21 +88,19 @@ if(isset($_POST['formSubmit'])){
                     <title>$subject</title>
                 </head>
                 <body>
-                    <table style=\"border-collapse: collapse; text-align: center; margin-left: auto; margin-right: auto; margin-top: 7px; margin-bottom: 7px;\">
+                    <table style=\"border-collapse: collapse; text-align: center; margin-left: auto; margin-right: auto; margin-top: 7px; margin-bottom: 7px; width:90%;\">
                         <tr>
-                            <th style=\"background-color: black; color: white; padding: 5px; border: 1px solid black;\" colspan=\"2\">
+                            <th style=\"background-color: black; color: white; padding: 10px; border: 1px solid black;\" colspan=\"2\">
                                 You have received a message from $_firstName $_surname
                             </th>
                         </tr>
+                        <tr><td style=\"padding:10px;text-align:right;\">Name:</td><td style=\"padding:10px;text-align:left;\">$_firstName $_surname</td></tr>
+                        <tr><td style=\"padding:10px;text-align:right;\">Email</td><td style=\"padding:10px;text-align:left\">$_fromEmail</td></tr>
+                        <tr><td style=\"padding:10px;text-align:right;\">Phone Number</td><td style=\"padding:10px;text-align:left\">$_phoneNumber</td></tr>
+                        <tr><td style=\"padding:10px;text-align:right;\">Subject</td><td style=\"padding:10px;text-align:left\">$_subject Enquiry</td></tr>
+                        <tr><td style=\"padding:10px;text-align:right;\">Message</td><td style=\"padding:10px;text-align:left\">$_message</td></tr>
                         <tr>
-                            <td>Name</td><td>$_firstName $_surname</td>
-                            <td>Email</td><td>$_fromEmail</td>
-                            <td>Phone Number</td><td>$_phoneNumber</td>
-                            <td>Subject</td><td>$_subject Enquiry</td>
-                            <td>Message</td><td>$_message</td>
-                        </tr>
-                        <tr>
-                            <td colspan=\"2\">This email has been auto-generated.  Do not reply to this email.</td>
+                            <td style=\"padding-top:30px;\" colspan=\"2\">This email has been auto-generated.  Do not reply to this email.</td>
                         </tr>
                     </table>
                 </body>

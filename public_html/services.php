@@ -60,6 +60,7 @@ require_once('header.php');
 							<li>UPVC</li>
 							<li>Dry verges</li>
 							<li>Rhones and Downpipes</li>
+							<li>Photographic roof reports</li>
 						</ul>
 					</p>
         		</div>
@@ -93,6 +94,8 @@ require_once('header.php');
 						</ul>
 					</p>
 					<p>
+						We can use traditional sand and cement or silicone renders, which can go directly over the existing finish without the noice, 
+						dust and debris which comes from cutting off the old roughcast.
 					</p>
         		</div>
 			</div>				
