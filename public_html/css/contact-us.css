@@ -1,3 +1,7 @@
 div.contact-details p{
-	padding-bottom: 10px;	
+	padding-bottom:10px;	
+}
+
+img.tick-icon{
+	height:30px;
 }

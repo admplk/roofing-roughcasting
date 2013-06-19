@@ -59,3 +59,7 @@ a.content-link div.content-holder:hover{
     cursor: pointer;
     border-style: inset;    
 }
+
+span.error{
+    color: #B94A48;
+}

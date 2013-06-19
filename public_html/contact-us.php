@@ -1,15 +1,11 @@
 <?php
-//require_once ('includes/initialisePage.php');
-$title = "Contact Us";
-$pageId = 3;
-$cssFiles = array("/css/common.css", "/css/contact-us.css");
-require_once('header.php');
+require_once ('contact-us_CODE.php');
 ?>
 
 <!--Page content START-->
 <div class="row">
     <div class="span6" style="margin-top: 10px;">
-        <div class="content-holder contact-details">
+        <div id="contactDetails" class="content-holder contact-details">
         	<div>
 	        	<p>Please feel free to get in touch via any of the methods below, or by using the form opposite.</p>
 	        	<p>I look forward to hearing from you.</p>
@@ -39,49 +35,173 @@ require_once('header.php');
         </div>
     </div>
     <div class="span6" style="margin-top: 10px;">
-        <div class="content-holder contact-details">
-        	<div>
-	        	<p>Please enter your contact details and question/query below:</p>	        	
-        	</div>
+        <div id="emailForm" class="content-holder contact-details">
+        	<?php if($_emailError){ ?>
+        		<div class="alert alert-error">
+        			<p><?php echo $_userMessage; ?></p>        			
+        		</div>
+        	<?php } else if($_emailSent){ ?>
+        		<div class="alert alert-success">
+        			<p>Thanks for your message <?php echo $_firstName; ?>.</p>
+        			<p>I'll get back to you as soon as possible with a response.  Please feel free to call me if the matter is urgent.</p>
+        		</div>
+        	<?php }else{ ?>
+	        	<div>
+		        	<p>Please enter your contact details and question/query below:</p>	        	
+	        	</div>
+        	<?php } ?>        	
         	<div style="width:90%; margin-left:auto;margin-right:auto;">
-	    		<form class="form-horizontal">
+	    		<form class="form-horizontal" id="questionForm" action="contact-us" method="post" onsubmit="return validateForm();">
 					<div class="control-group">
 				    	<label class="control-label" for="inputFirstName">First Name</label>
 					    <div class="controls">
-				      		<input type="text" id="inputFirstName" placeholder="First Name">
+				      		<input type="text" id="inputFirstName" class="required" name="firstName" placeholder="First Name" value="<?php echo $_firstName; ?>" />
+				      		<span id="inputFirstName_validation" style="display:none;"></span>
+				      		<img src="/img/tickIcon.gif" id="inputFirstName_success" alt="success" class="tick-icon" style="display:none;" />
 					    </div>
 				  	</div>
 				  	<div class="control-group">
 				    	<label class="control-label" for="inputSurname">Surname</label>
 					    <div class="controls">
-				      		<input type="text" id="inputSurname" placeholder="Surname">
+				      		<input type="text" id="inputSurname" class="required" name="surname" placeholder="Surname" value="<?php echo $_surname; ?>" />
+				      		<span id="inputSurname_validation" style="display:none;"></span>
+				      		<img src="/img/tickIcon.gif" id="inputSurname_success" alt="success" class="tick-icon" style="display:none;" />
 					    </div>
 				  	</div>
 			  		<div class="control-group">
 				    	<label class="control-label" for="inputEmail">Email</label>
 				    	<div class="controls">
-				      		<input type="text" id="inputEmail" placeholder="e.g. JoeBlogs@email.com">
+				      		<input type="text" id="inputEmail" class="required" name="email" placeholder="e.g. JoeBlogs@email.com" value="<?php echo $_fromEmail; ?>" />
+				      		<span id="inputEmail_validation" style="display:none;"></span>
+				      		<img src="/img/tickIcon.gif" id="inputEmail_success" alt="success" class="tick-icon" style="display:none;" />
 				    	</div>
 				  	</div>
 				  	<div class="control-group">
 				    	<label class="control-label" for="inputPhone">Phone Number</label>
 				    	<div class="controls">
-				      		<input type="text" id="inputPhone" placeholder="Phone/Mobile Number">
+				      		<input type="text" id="inputPhone" class="required" name="phone" placeholder="Phone/Mobile Number" value="<?php echo $_phoneNumber; ?>" />
+				      		<span id="inputPhone_validation" style="display:none;"></span>
+				      		<img src="/img/tickIcon.gif" id="inputPhone_success" alt="success" class="tick-icon" style="display:none;" />
 				    	</div>
 				  	</div>
 				  	<div class="control-group">
-				    	<div class="controls" style="text-align:right">			      
-				      		<button type="submit" class="btn btn-success">Send</button>
+				    	<label class="control-label" for="inputSubject">Subject/Topic</label>
+				    	<div class="controls">
+				      		<select id="inputSubject" class="required" name="subject">
+				      			<option value="">Please select a subject...</option>
+				      			<option value="Quote" <?php if($_subject == "Quote"){echo "selected=\"selected\"";} ?>>Free Quote</option>
+				      			<option value="Work" <?php if($_subject == "Work"){echo "selected=\"selected\"";} ?>>Work Enquiry</option>
+				      			<option value="Urgent Call Out" <?php if($_subject == "Urgent Call Out"){echo "selected=\"selected\"";} ?>>Urgent Call Out</option>
+				      			<option value="General Question" <?php if($_subject == "General Question"){echo "selected=\"selected\"";} ?>>General / Other</option>
+				      		</select>
+				      		<span id="inputSubject_validation" style="display:none;"></span>
+				      		<img src="/img/tickIcon.gif" id="inputSubject_success" alt="success" class="tick-icon" style="display:none;" />
 				    	</div>
 				  	</div>
+				  	<div class="control-group">
+				    	<label class="control-label" for="inputMessage">Message</label>
+				    	<div class="controls">
+				    		<textarea id="inputMessage" class="required" name="question" placeholder="Please enter your question or message here..." rows="5"><?php echo $_message; ?></textarea>
+				    		<span id="inputMessage_validation" style="display:none;"></span>
+				    		<img src="/img/tickIcon.gif" id="inputMessage_success" alt="success" class="tick-icon" style="display:none;" />
+				    	</div>
+				  	</div>
+				  	<?php if(!$_emailSent){ ?>
+				  	<div class="form-actions">
+				    	<div class="controls">
+				      		<input type="submit" name="formSubmit" class="btn btn-success" value="Send"/>
+				    	</div>
+				  	</div>
+				  	<?php } ?>
 				</form>
-			</div>
+			</div>			
         </div>
     </div>
 </div>
 <!--Page content END-->
 
 <div style="clear: both;"></div>
+
+<script type="text/javascript">
+	function validateForm(){
+		var isValid = true;
+
+		$('.required').each(function(){
+			isValid = ValidateField($(this));
+
+			if (!isValid){
+				return false;
+			}
+		});
+
+		return isValid;		
+  	}
+
+  	function IsValidEmail(email) {
+  		var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  		return regex.test(email);
+	}
+
+	function ClearFieldValidation(field){
+		field.parent().parent().removeClass("success");
+		field.parent().parent().removeClass("warning");
+		field.parent().parent().removeClass("error");
+
+		var fieldId = field.attr("Id");
+		$("#" + fieldId + "_validation").hide();
+		$("#" + fieldId + "_success").hide();
+	}
+
+	function ValidateField(field){
+		var fieldId = field.attr("Id");
+    	var fieldValue = field.val();
+
+		if(fieldId == "inputEmail" && !IsValidEmail(fieldValue)){        		
+			field.parent().parent().addClass("error");
+			field.focus();
+			$("#" + fieldId + "_validation").addClass("error");
+			$("#" + fieldId + "_validation").html("invalid email");
+			$("#" + fieldId + "_validation").show();
+			return false;   			
+    	}
+    	else if(fieldValue != ""){        		
+    		field.parent().parent().addClass("success");        						
+			$("#" + fieldId + "_success").show();
+			return true;
+    	}
+    	else{    			        		
+			field.parent().parent().addClass("error");
+			$("#" + fieldId + "_validation").addClass("error");
+			$("#" + fieldId + "_validation").html("*required");
+			$("#" + fieldId + "_validation").show(); 
+			return false;
+    	}
+	}
+
+    $(document).ready(function(){
+        FixContentBoxLengths();
+
+<?php if($_emailSent){ ?>
+        $(".required").attr("disabled", "disabled");
+<?php } ?>
+
+        $('.required').blur(function(){        	
+        	ClearFieldValidation($(this));
+        	ValidateField($(this));
+        })
+    });
+
+    function FixContentBoxLengths(){
+        var content1 = $('#contactDetails');
+        var content2 = $('#emailForm');
+        if(content1.height() > content2.height()){
+            content2.height(content1.height());
+        }else{
+            content1.height(content2.height());
+        }
+    }
+</script>
+
 <?php
 require_once('footer.php');
 ?>
