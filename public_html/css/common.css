@@ -1,3 +1,7 @@
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
 div.content-holder{
 	padding: 10px;
 	background-color: white;	
@@ -17,10 +21,9 @@ div#bottomContainer{
     position: relative;
     margin-top: -50px; /* negative value of footer height */
     height: 50px;
-    clear:both;
-    /*background-color: white; 
-    color:white;
-    overflow:none;*/
+    clear:both;    
+    color:#7F0000;
+    overflow:none;
 }
 
 div.header-image{
@@ -62,4 +65,10 @@ a.content-link div.content-holder:hover{
 
 span.error{
     color: #B94A48;
+}
+
+div#copyright{
+    float:right;
+    padding-top:20px;
+    padding-right: 10px;
 }

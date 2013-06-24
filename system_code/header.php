@@ -23,7 +23,8 @@
     <body>        
         <!--<div class="header-image">          
         </div>-->
-        <div class="container">                      
+        <div id="wrap">
+        <div class="container" style="padding-bottom: 70px;">                      
           <div class="row">
               <div class="span4 offset1" style="padding-top: 10px;">                
                   <img src="/img/logo-transparent2.gif" alt="Grant Allan Roofing and Roughcasting" style="height:150px;" />                  
@@ -46,7 +47,7 @@
             <ul class="nav nav-tabs span12" style="margin-top: -30px; font-size: 150%;">
               <li class="<?php if ($pageId == 3){?> active <?php }?> pull-right"><a href="/contact-us" style="padding-bottom: 10px;">Contact Us</a></li>
               <li class="<?php if ($pageId == 2){?> active <?php }?> pull-right"><a href="/services" style="padding-bottom: 10px;">Services</a></li>
-              <li class="<?php if ($pageId == 1){?> active <?php }?> pull-right"><a href="/home"><i class="icon-home"></i></a></li>
+              <li class="<?php if ($pageId == 1){?> active <?php }?> pull-right"><a href="/"><i class="icon-home"></i></a></li>
             </ul>
 
             <!--alternate nav bar
