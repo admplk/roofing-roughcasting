@@ -23,7 +23,7 @@ require_once('header.php');
 		            	<img src="img/van-slide.jpg" style="width: 100%;" alt="">
 		            	<div class="carousel-caption">
 		              		<h4>Fully Qualified Trademan For Over 13 Years</h4>
-		              		<p>Based in Edinburgh, all areas covered.  All work undertaken and guaranteed, no job is too small.  
+		              		<p>Based in South Queensferry, Edinburgh, all areas covered.  All work undertaken and guaranteed, no job is too small.  
 		              			Free estimates and advice, plus 24/7 emergency call out facility.  Full public liability insurance, 
 		              			all insurance work welcome.</p>
 		            	</div>
