@@ -16,7 +16,7 @@ require_once ('contact-us_CODE.php');
 	        	<address>
 				  <strong>Grant Allan Roofing and Roughcasting</strong><br>
 				  30 Moubray Grove<br>
-				  South QueensFerry<br>
+				  South Queensferry<br>
 				  EH30 9PB<br>			  
 				</address>
 			</div>

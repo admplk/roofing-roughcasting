@@ -3,7 +3,7 @@
     <head>
         <title><?php echo $title; ?></title>
         <meta charset="utf-8">
-        <meta name="description" content="Fully qualified roofer and roughcaster, Grant Allan Roofing and Roughcasting offers a range of services in South QueensFerry, Edinburgh and the Lothians." />
+        <meta name="description" content="Fully qualified roofer and roughcaster, Grant Allan Roofing and Roughcasting offers a range of services in South Queensferry, Edinburgh and the Lothians." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.min.css" />        
