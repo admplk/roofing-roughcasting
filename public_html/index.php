@@ -1,102 +1,153 @@
 <?php
 //require_once ('includes/initialisePage.php');
 $title = "Grant Allan Roofing and Roughcasting | Roofer, Roughcaster | South Queensferry";
+$description = "Fully qualified roofer, roughcaster, builder, offering a range of services in South Queensferry, Edinburgh, Dunfermline and the Lothians.";
 $pageId = 1;
-$cssFiles = array("/css/common.css", "/css/home.css");
+
 require_once('header.php');
 ?>
 
-<!--Page content START-->
-
-<div class="row">
-    <div class="span12">
-        <div class="content-holder">
-		    <div id="myCarousel" class="carousel slide" style="margin-bottom: 7px;">
-		        <ol class="carousel-indicators">
-		      		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		      		<li data-target="#myCarousel" data-slide-to="1"></li>
-		      		<li data-target="#myCarousel" data-slide-to="2"></li>
-		      		<li data-target="#myCarousel" data-slide-to="3"></li>
-		        </ol>
-		        <div class="carousel-inner">
-		      		<div class="item active">
-		            	<img src="img/van-slide.jpg" style="width: 100%;" alt="">
-		            	<div class="carousel-caption">
-		              		<h4>Fully Qualified Trademan For Over 13 Years</h4>
-		              		<p>Based in South Queensferry, Edinburgh, all areas covered.  All work undertaken and guaranteed, no job is too small.  
-		              			Free estimates and advice, plus 24/7 emergency call out facility.  Full public liability insurance, 
-		              			all insurance work welcome.</p>
-		            	</div>
-		          	</div>
-		          	<div class="item">
-		            	<img src="img/roof-slide.jpg" style="width: 100%;" alt="">
-		                <div class="carousel-caption">
-		              		<h4>Roofing</h4>
-		              		<p>Roofing work includes slating and tiling.  All flat roofs undertaken in single ply, 3 and 5 ply systems. Fatra liquid plastic approved installer. 
-		              			Photographic roof reports available.  Other services include zinc/lead work, UPVC, dry verges, rhones and downpipes.</p>
-		                </div>
-		          	</div>
-		          	<div class="item">
-		            	<img src="img/house-slide.jpg" style="width: 100%;" alt="">
-		            	<div class="carousel-caption">
-		              		<h4>Roughcasting</h4>
-		              		<p>Includes dry/wet dashing, smooth rendered finishings and sand stone restoration. We can use traditional sand and cement
-		              			or silicone renders, which can go directly over the existing finish without the noice, dust and debris which comes from 
-		              			cutting off the old roughcast.</p>
-		                </div>
-		          	</div>
-		          	<div class="item">
-		            	<img src="img/fatra-slide.jpg" style="width: 100%;" alt="">
-		            	<div class="carousel-caption">
-		              		<h4>Fatra Approved Installer</h4>
-		              		<p>Fatra liquid plastic approved installer.</p>
-		                </div>
-		          	</div>
-		        </div><!--carousel-inner-->
-		        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-		        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-		  	</div><!--myCaroursel-->
-	  	</div><!--content-holder-->
-	</div><!--span12-->
-</div><!--row-->
-
-<div class="row">
-	<div class="span4" style="margin-top: 20px;">
-		<a href="/contact-us" class="content-link">
-			<div id="contactUsContent" class="content-holder">
-				<div id="contactUsText">
-					<h2>Contact Us</h2>
-					<span style="font-size:120%;">Any questions? Looking for a free quotation?  We would love to hear from you.</span>
-				</div>
+<body class="home">
+    <?php require_once('navigation.php'); ?>
+    
+    <!-- Header -->
+	<header id="head">
+		<div class="container">
+			<div class="row">
+                            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 transparent-box">
+                                <h1 class="lead">Get a free roof check or quote</h1>				
+				<p>                                    
+                                    <a class="btn btn-primary btn-lg" role="button" href="/contact-us" >Call us today!</a>
+                                </p>
+                            </div>    				
 			</div>
-		</a>
-	</div>
-	<div class="span4" style="margin-top: 20px;">
-		<a href="/services" class="content-link">
-			<div id="servicesContent" class="content-holder">
-				<div id="servicesText">
-					<h2>Services</h2>
-					<span style="font-size:120%;">Find out about the range of services we offer.</span>
-				</div>
-			</div>
-		</a>
-	</div>
-	<div class="span4" style="margin-top: 20px;">
-		<a href="http://www.fatra.co.uk" class="content-link">
-			<div id="fatraContent" class="content-holder">
-				<img src="/img/fatra-blue.jpg" alt="fatra" />				
-				<div id="fatraText">
-					<span style="font-size:120%;">Approved Installer</span><br />
-					<span style="font-style:italic;">Enviromentally friendly single ply roofing systems.</span>
-				</div>
-			</div>
-		</a>
-	</div>
-</div>
+		</div>
+	</header>
+	<!-- /Header -->
 
-<!--Page content END-->
+	<!-- Intro -->
+	<div class="container text-center">
+            <br> <br>
+            <img class="img-circle" src="/img/logo-1.png" alt="Generic placeholder image" height="100">
+            <h2 class="thin">Fully Qualified Tradesman For Over 17 Years</h2>
+            <p class="text-muted">
+                Based in South Queensferry, covering all of Edinburgh, Dunfermline and the Lothians.  All work is undertaken and guaranteed, no job is too small.<br />
+                Free estimates and advice, plus a 24/7 emergency call out facility.  Full public liability insurance, all insurance work welcome.
+            </p>
+	</div>
+	<!-- /Intro-->
+		
+	<!-- Highlights - jumbotron -->
+	<div class="jumbotron top-space">
+		<div class="container">
+			
+			<h3 class="text-center thin">Offering a Range of Services</h3>
+			
+			<div class="row">
+				<div class="col-md-3 col-sm-6 highlight">
+<!--                                <div class="h-caption"><h4><i class="fa fa-cogs fa-5"></i>Bootstrap-powered</h4></div>-->
+                                    <div class="h-caption">
+                                        <img class="img-circle" src="/img/roof-1.jpg" alt="roofing" width="140" height="140">
+                                        <h4>Roofing</h4>
+                                    </div>                                    
+                                    <div class="h-body text-center">
+                                        <p>
+                                            An extensive range of roofing services including slating, tiling, rhones and downpipes, zinc and lead work, and many others.<br />Call us today for a free roof check!
+                                        </p>
+                                        <p><a class="btn btn-default" href="/roofing" role="button">More details &raquo;</a></p>
+                                    </div>
+				</div>
+				<div class="col-md-3 col-sm-5 highlight">
+                                    <div class="h-caption">
+                                        <img class="img-circle" src="/img/house-1.jpg" alt="Generic placeholder image" width="140" height="140">
+                                        <h4>Roughcasting / Harling</h4>
+                                    </div>
+                                    <div class="h-body text-center">
+                                        <p>Outstanding roughcasting and harling services such as dry and wet dashings, smooth rendered finishings, and sand stone restoration</p>
+                                        <p><a class="btn btn-default" href="/roughcasting" role="button">More details &raquo;</a></p>
+                                    </div>
+				</div>
+				<div class="col-md-3 col-sm-6 highlight">
+                                    <div class="h-caption">
+                                        <img class="img-circle" src="/img/fatra-1.jpg" alt="Generic placeholder image" width="140" height="140">
+                                        <h4>Fatra Approved</h4>
+                                    </div>
+                                    <div class="h-body text-center">
+                                        <p>
+                                            Approved Fatra installer - Environmentally friendly single ply roofing systems.
+                                        </p>
+                                        <p><a class="btn btn-default" href="http://www.fatra.co.uk" role="button" target="blank">More details &raquo;</a></p>
+                                    </div>
+				</div>
+				<div class="col-md-3 col-sm-5 highlight">
+                                    <div class="h-caption">
+                                        <img class="img-circle" src="/img/van-1.jpg" alt="Generic placeholder image" width="140" height="140">
+                                        <h4>Contact Us!</h4>
+                                    </div>
+                                    <div class="h-body text-center">
+                                        <p>
+                                            Call, text or email us today for a free quote, roof check or emergency call out.
+                                        </p>
+                                        <p><a class="btn btn-default" href="/contact-us" role="button">More details &raquo;</a></p>
+                                    </div>
+				</div>
+			</div> <!-- /row  -->
+		
+		</div>
+	</div>
+	<!-- /Highlights -->
 
-<div style="clear: both;"></div>
+	<!-- container -->
+	<div class="container">
+
+		<h2 class="text-center top-space">Frequently Asked Questions</h2>
+		<br>
+
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>What areas do you serve?</h3>
+				<p>We're based in South Queensferry, but serve all areas of Dunfermline, Edinburgh and the Lothians.</p>
+			</div>
+			<div class="col-sm-6">
+				<h3>I can't find the service I'm looking for?</h3>
+				<p>
+                                    Get in touch! We also cover all general building work, house extensions, porches, attic conversions etc.  All qualified and trusted trades supplied.
+                                </p>
+			</div>
+		</div> <!-- /row -->
+
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>Is the roof check really free?</h3>
+				<p>
+                                    Yes! You are are under no obligation to commit to any work after the check is carried out.  We also offer free estimates and advice.
+				</p>
+			</div>
+			<div class="col-sm-6">
+				<h3>Why should I choose Grant Allan Roofing &amp; Roughcasting?</h3>
+				<p>We provide a friendly, affordable and professional service covering all of your roofing, harling and building needs. All work is guaranteed, and we provide free estimates and advice, so give us a call today!</p>
+			</div>
+		</div> <!-- /row -->
+
+        </div><!-- /container -->
+	
+	<!-- Social links. -->
+<!--	<section id="social">
+            <div class="container">
+                <div class="wrapper clearfix">
+                     AddThis Button BEGIN 
+                    <div class="addthis_toolbox addthis_default_style">
+                        <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>                        
+                    </div>
+                     AddThis Button END 
+                </div>
+            </div>
+	</section>-->
+	<!-- /social links -->
+
 <?php
 require_once('footer.php');
 ?>
+
+</body>
+</html>

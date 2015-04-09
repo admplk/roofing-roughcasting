@@ -33,4 +33,4 @@ RewriteRule ^home$ index.php
 RewriteRule ^([a-zA-Z\-]+)$ $1.php
 #RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
 
-php_value include_path ".;C:\Users\Adam\My Websites\RoofingAndRoughcasting\system_code\;C:\php\pear"
+#php_value include_path ".;C:\Users\Adam\My Websites\roofing-roughcasting\system_code\;C:\php\pear"
