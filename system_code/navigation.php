@@ -15,7 +15,7 @@
                         <!-- Button for smallest screens -->
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                         <a class="navbar-brand" href="/">
-                            <img id="headerImg" src="img/logo-1.png" alt="Grant Allan Roofing & Roughcasting">
+                            <img id="headerImg" src="img/logo-1-resized.png" alt="Grant Allan Roofing & Roughcasting">
                         </a>
                 </div>
                 <div class="navbar-collapse collapse">

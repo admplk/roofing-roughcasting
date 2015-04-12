@@ -28,7 +28,7 @@ require_once('header.php');
 	<!-- Intro -->
 	<div class="container text-center">
             <br> <br>
-            <img class="img-circle" src="/img/logo-1.png" alt="Generic placeholder image" height="100">
+            <img class="img-circle" src="/img/logo-1-resized.png" alt="Generic placeholder image" height="100">
             <h2 class="thin">Fully Qualified Tradesman For Over 17 Years</h2>
             <p class="text-muted">
                 Based in South Queensferry, covering all of Edinburgh, Dunfermline and the Lothians.  All work is undertaken and guaranteed, no job is too small.<br />
@@ -45,7 +45,6 @@ require_once('header.php');
 			
 			<div class="row">
 				<div class="col-md-3 col-sm-6 highlight">
-<!--                                <div class="h-caption"><h4><i class="fa fa-cogs fa-5"></i>Bootstrap-powered</h4></div>-->
                                     <div class="h-caption">
                                         <img class="img-circle" src="/img/roof-1.jpg" alt="roofing" width="140" height="140">
                                         <h4>Roofing</h4>
@@ -59,7 +58,7 @@ require_once('header.php');
 				</div>
 				<div class="col-md-3 col-sm-5 highlight">
                                     <div class="h-caption">
-                                        <img class="img-circle" src="/img/house-1.jpg" alt="Generic placeholder image" width="140" height="140">
+                                        <img class="img-circle" src="/img/house-1.jpg" alt="Roughcasting" width="140" height="140">
                                         <h4>Roughcasting / Harling</h4>
                                     </div>
                                     <div class="h-body text-center">
@@ -69,7 +68,7 @@ require_once('header.php');
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
                                     <div class="h-caption">
-                                        <img class="img-circle" src="/img/fatra-1.jpg" alt="Generic placeholder image" width="140" height="140">
+                                        <img class="img-circle" src="/img/fatra-1.jpg" alt="Fatra approved installer" width="140" height="140">
                                         <h4>Fatra Approved</h4>
                                     </div>
                                     <div class="h-body text-center">
@@ -81,7 +80,7 @@ require_once('header.php');
 				</div>
 				<div class="col-md-3 col-sm-5 highlight">
                                     <div class="h-caption">
-                                        <img class="img-circle" src="/img/van-1.jpg" alt="Generic placeholder image" width="140" height="140">
+                                        <img class="img-circle" src="/img/van-1.jpg" alt="Contact Us" width="140" height="140">
                                         <h4>Contact Us!</h4>
                                     </div>
                                     <div class="h-body text-center">
@@ -117,34 +116,19 @@ require_once('header.php');
 		</div> <!-- /row -->
 
 		<div class="row">
-			<div class="col-sm-6">
-				<h3>Is the roof check really free?</h3>
-				<p>
-                                    Yes! You are are under no obligation to commit to any work after the check is carried out.  We also offer free estimates and advice.
-				</p>
-			</div>
-			<div class="col-sm-6">
-				<h3>Why should I choose Grant Allan Roofing &amp; Roughcasting?</h3>
-				<p>We provide a friendly, affordable and professional service covering all of your roofing, harling and building needs. All work is guaranteed, and we provide free estimates and advice, so give us a call today!</p>
-			</div>
+                    <div class="col-sm-6">
+                            <h3>Is the roof check really free?</h3>
+                            <p>
+                                Yes! You are are under no obligation to commit to any work after the check is carried out.  We also offer free estimates and advice.
+                            </p>
+                    </div>
+                    <div class="col-sm-6">
+                            <h3>Why should I choose Grant Allan Roofing &amp; Roughcasting?</h3>
+                            <p>We provide a friendly, affordable and professional service covering all of your roofing, harling and building needs. All work is guaranteed, and we provide free estimates and advice, so give us a call today!</p>
+                    </div>
 		</div> <!-- /row -->
 
-        </div><!-- /container -->
-	
-	<!-- Social links. -->
-<!--	<section id="social">
-            <div class="container">
-                <div class="wrapper clearfix">
-                     AddThis Button BEGIN 
-                    <div class="addthis_toolbox addthis_default_style">
-                        <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>                        
-                    </div>
-                     AddThis Button END 
-                </div>
-            </div>
-	</section>-->
-	<!-- /social links -->
-
+        </div><!-- /container -->		
 <?php
 require_once('footer.php');
 ?>

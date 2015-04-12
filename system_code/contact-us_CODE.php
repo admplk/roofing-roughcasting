@@ -1,8 +1,7 @@
 <?php
-$title = "Contact Us";
-$pageId = 3;
-$cssFiles = array("/css/common.css", "/css/contact-us.css");
-
+$title = "Contact Us | Roofer, Roughcaster, Harler in South Queensferry, Edinburgh, Dunfermline";
+$description = "Get in touch for professional roughcasting and harling services in South Queensferry, Edinburgh, Dunfermline and the Lothians.";
+$pageId = 4;
 
 /*
  * Define the auto-load function for classes
@@ -45,7 +44,7 @@ $_emailError = false;
 
 $_userMessage = "Sorry, the message could not be sent.";
 $_firstName = Convert::ArrayValueToString($_POST, "firstName");
-$_surname = Convert::ArrayValueToString($_POST, "surname");
+//$_surname = Convert::ArrayValueToString($_POST, "surname");
 $_fromEmail = Convert::ArrayValueToEmail($_POST, "email");
 $_phoneNumber = Convert::ArrayValueToString($_POST, "phone");
 $_subject = Convert::ArrayValueToString($_POST, "subject");
@@ -54,12 +53,12 @@ $_message = Convert::ArrayValueToString($_POST, "question");
 if(isset($_POST['formSubmit'])){	
     if($_firstName == ""){
     	$_emailError = true;
-    	$_userMessage .= "<br />Please enter your first name.";
+    	$_userMessage .= "<br />Please enter your name.";
     }
-    if($_surname == ""){
-    	$_emailError = true;
-    	$_userMessage .= "<br />Please enter your surname.";
-    }
+//    if($_surname == ""){
+//    	$_emailError = true;
+//    	$_userMessage .= "<br />Please enter your surname.";
+//    }
     if($_fromEmail == ""){
     	$_emailError = true;
     	$_userMessage .= "<br />Please enter your email address.";
@@ -79,8 +78,8 @@ if(isset($_POST['formSubmit'])){
 
     if(!$_emailError){
     	try{    		
-    		$to = 'mail@roofingandroughcasting.com';
-            $subject = "$_subject Enquiry from $_firstName $_surname";
+            $to = 'mail@roofingandroughcasting.com';
+            $subject = "$_subject Enquiry from $_firstName";
 
             $message = 
             "<html>
@@ -91,10 +90,10 @@ if(isset($_POST['formSubmit'])){
                     <table style=\"border-collapse: collapse; text-align: center; margin-left: auto; margin-right: auto; margin-top: 7px; margin-bottom: 7px; width:90%;\">
                         <tr>
                             <th style=\"background-color: black; color: white; padding: 10px; border: 1px solid black;\" colspan=\"2\">
-                                You have received a message from $_firstName $_surname
+                                You have received a message from $_firstName
                             </th>
                         </tr>
-                        <tr><td style=\"padding:10px;text-align:right;\">Name:</td><td style=\"padding:10px;text-align:left;\">$_firstName $_surname</td></tr>
+                        <tr><td style=\"padding:10px;text-align:right;\">Name:</td><td style=\"padding:10px;text-align:left;\">$_firstName</td></tr>
                         <tr><td style=\"padding:10px;text-align:right;\">Email</td><td style=\"padding:10px;text-align:left\">$_fromEmail</td></tr>
                         <tr><td style=\"padding:10px;text-align:right;\">Phone Number</td><td style=\"padding:10px;text-align:left\">$_phoneNumber</td></tr>
                         <tr><td style=\"padding:10px;text-align:right;\">Subject</td><td style=\"padding:10px;text-align:left\">$_subject Enquiry</td></tr>
@@ -113,7 +112,7 @@ if(isset($_POST['formSubmit'])){
             $headers .= "Return-Path: mail@roofingandroughcasting.com\r\n";
 
             mail($to,$subject,$message,$headers);
-    		$_emailSent = true;
+            $_emailSent = true;
     	}
     	catch (Exception $e){
             $_emailError = true;

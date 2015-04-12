@@ -5,7 +5,7 @@ function validateForm(){
 		isValid = ValidateField($(this));
 
 		if (!isValid){
-			return false;
+                    return false;
 		}
 	});
 
@@ -23,9 +23,8 @@ function IsValidPhoneNumber(phoneNumber) {
 }
 
 function ClearFieldValidation(field){
-	field.parent().parent().removeClass("success");
-	field.parent().parent().removeClass("warning");
-	field.parent().parent().removeClass("error");
+	field.removeClass("alert-success");	
+	field.removeClass("alert-danger");
 
 	var fieldId = field.attr("Id");
 	$("#" + fieldId + "_validation").hide();
@@ -37,50 +36,32 @@ function ValidateField(field){
 	var fieldValue = field.val();
 
 	if(fieldId == "inputEmail" && !IsValidEmail(fieldValue)){        		
-		field.parent().parent().addClass("error");
-		field.focus();
-		$("#" + fieldId + "_validation").addClass("error");
-		$("#" + fieldId + "_validation").html("invalid email");
+		field.addClass("alert-danger");
+		field.focus();			
 		$("#" + fieldId + "_validation").show();
 		return false;   			
 	}
 	else if(fieldId == "inputPhone" && !IsValidPhoneNumber(fieldValue)){        		
-		field.parent().parent().addClass("error");
-		field.focus();
-		$("#" + fieldId + "_validation").addClass("error");
-		$("#" + fieldId + "_validation").html("invalid");
+		field.addClass("alert-danger");
+		field.focus();		
 		$("#" + fieldId + "_validation").show();
 		return false;   			
 	}
 	else if(fieldValue != ""){        		
-		field.parent().parent().addClass("success");        						
+		field.addClass("alert-success");        						
 		$("#" + fieldId + "_success").show();
 		return true;
 	}
 	else{    			        		
-		field.parent().parent().addClass("error");
-		$("#" + fieldId + "_validation").addClass("error");
-		$("#" + fieldId + "_validation").html("*required");
+		field.addClass("alert-danger");				
 		$("#" + fieldId + "_validation").show(); 
 		return false;
 	}
 }
 
-$(document).ready(function(){
-    FixContentBoxLengths();
-
+$(document).ready(function(){   
     $('.required').blur(function(){        	
     	ClearFieldValidation($(this));
     	ValidateField($(this));
     })
 });
-
-function FixContentBoxLengths(){
-    var content1 = $('#contactDetails');
-    var content2 = $('#emailForm');
-    if(content1.height() > content2.height()){
-        content2.height(content1.height());
-    }else{
-        content1.height(content2.height());
-    }
-}
