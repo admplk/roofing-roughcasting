@@ -9,8 +9,7 @@
         <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
         <link rel="stylesheet" href="/css/font-awesome.min.css">        
-        <link rel="stylesheet" href="/css/bootstrap-theme-alt.css" media="screen" >
-	<link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/bootstrap-theme-alt.min.css" media="screen" >	
 
         <?php
         if(isset($cssFiles)){

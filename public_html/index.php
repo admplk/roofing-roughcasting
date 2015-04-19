@@ -46,7 +46,7 @@ require_once('header.php');
 			<div class="row">
 				<div class="col-md-3 col-sm-6 highlight">
                                     <div class="h-caption">
-                                        <img class="img-circle" src="/img/roof-1.jpg" alt="roofing" width="140" height="140">
+                                        <img class="img-circle" src="/img/roof-2.jpg" alt="roofing" width="140" height="140">
                                         <h4>Roofing</h4>
                                     </div>                                    
                                     <div class="h-body text-center">
@@ -58,7 +58,7 @@ require_once('header.php');
 				</div>
 				<div class="col-md-3 col-sm-5 highlight">
                                     <div class="h-caption">
-                                        <img class="img-circle" src="/img/house-1.jpg" alt="Roughcasting" width="140" height="140">
+                                        <img class="img-circle" src="/img/house-2.jpg" alt="Roughcasting" width="140" height="140">
                                         <h4>Roughcasting / Harling</h4>
                                     </div>
                                     <div class="h-body text-center">
@@ -68,7 +68,7 @@ require_once('header.php');
 				</div>
 				<div class="col-md-3 col-sm-6 highlight">
                                     <div class="h-caption">
-                                        <img class="img-circle" src="/img/fatra-1.jpg" alt="Fatra approved installer" width="140" height="140">
+                                        <img class="img-circle" src="/img/fatra-2.jpg" alt="Fatra approved installer" width="140" height="140">
                                         <h4>Fatra Approved</h4>
                                     </div>
                                     <div class="h-body text-center">
@@ -80,7 +80,7 @@ require_once('header.php');
 				</div>
 				<div class="col-md-3 col-sm-5 highlight">
                                     <div class="h-caption">
-                                        <img class="img-circle" src="/img/van-1.jpg" alt="Contact Us" width="140" height="140">
+                                        <img class="img-circle" src="/img/van-2.jpg" alt="Contact Us" width="140" height="140">
                                         <h4>Contact Us!</h4>
                                     </div>
                                     <div class="h-body text-center">

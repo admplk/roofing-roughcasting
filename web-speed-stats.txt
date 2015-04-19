@@ -1,0 +1,10 @@
+Home page
+Mobile
+55/100
+73/100 (after optimising images)
+74/100 (after minifying js and css)
+
+Desktop
+61/100
+86/100 (after optimising images)
+87/100 (after minifying js and css)

@@ -76,4 +76,4 @@
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="/js/headroom.min.js"></script>
 <script src="/js/jQuery.headroom.min.js"></script>
-<script src="/js/template.js"></script>
+<script src="/js/template.min.js"></script>
